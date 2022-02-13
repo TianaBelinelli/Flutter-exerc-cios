@@ -1,0 +1,35 @@
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+      home: Column(
+        children: [
+          Image.assets ('receita1.jpg')
+        
+          Row (
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly
+           children: [
+            Container(
+          color: Colors.green,
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          color: Colors.blue,
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          color: Colors.yellow,
+          height: 50,
+          width: 50,
+        ),
+      ],//image assets
+        ),
+      ],
+      ),
+    );
+   }
+}

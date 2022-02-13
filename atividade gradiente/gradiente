@@ -1,0 +1,44 @@
+
+
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Gradiente Fundo',
+      home: Container(
+        child: const Center(
+          child: Text(
+            "Flutter Gradiente",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2,
+              wordSpacing: 3,
+            ),
+          ),
+        ),
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.bottomRight,
+            end: Alignment.topLeft,
+            colors: [
+              Colors.purpleAccent,
+              Colors.deepOrangeAccent,
+              Colors.yellowAccent,
+              Colors.limeAccent,
+            ],
+            stops: [
+              0.1,
+              0.4,
+              0.6,
+              0.8,
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
