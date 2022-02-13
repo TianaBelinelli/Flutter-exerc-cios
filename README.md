@@ -1,2 +1,2 @@
-# Flutter-exerc-cios
+# Flutter-exerccios
 Exercicios Flutter Nulab
